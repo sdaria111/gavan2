@@ -13,7 +13,7 @@ body {
 
 /* классы для разных фонов */
 .body-home {
-  background-image: url('../images/pic1.jpg');
+  background-image: url('https://sdaria111.github.io/gavan2/images/pic1.jpg');
   background-size: cover; /* растягивает изображение, чтобы закрыть всю область, сохраняя пропорции */
   background-position: center; /* центрирует изображение */
   background-repeat: no-repeat; /* не повторяет картинку (иначе будет мозаика) */
@@ -22,7 +22,7 @@ body {
 }
 
 .body-about {
-  background-image: url('../images/pic5.jpg');
+  background-image: url('https://sdaria111.github.io/gavan2/images/pic5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@ body {
 }
 
 .body-types {
-  background-image: url('../images/pic5.jpg');
+  background-image: url('https://sdaria111.github.io/gavan2/images/pic5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@ body {
 }
 
 .body-place {
-  background-image: url('../images/pic5.jpg');
+  background-image: url('https://sdaria111.github.io/gavan2/images/pic5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -170,4 +170,5 @@ minmax(260px, 1fr) — задаёт минимальную и максималь
   height: auto; /* сохраняет пропорции */
   border-radius: 8px;
   object-fit: cover; /* обрезает изображение, чтобы оно заполнило заданные размеры */
+
 }
