@@ -1,0 +1,173 @@
+/* общие стили */
+* { /* * применяет ко всем элементам */
+  margin: 0; /*сбрасывает стандартные отступы */
+  padding: 0; /*сбрасывает стандартные отступы */
+  box-sizing: border-box; /*  заставляет width и height включать padding и border, а не добавляться к ним */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6; /* междустрочный интервал */
+  color: white;
+}
+
+/* классы для разных фонов */
+.body-home {
+  background-image: url('../images/pic1.jpg');
+  background-size: cover; /* растягивает изображение, чтобы закрыть всю область, сохраняя пропорции */
+  background-position: center; /* центрирует изображение */
+  background-repeat: no-repeat; /* не повторяет картинку (иначе будет мозаика) */
+  background-attachment: fixed; /* фон не прокручивается вместе со страницей */
+  color: white; /* белый текст */
+}
+
+.body-about {
+  background-image: url('../images/pic5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white; 
+}
+
+.body-types {
+  background-image: url('../images/pic5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white; 
+}
+
+.body-place {
+  background-image: url('../images/pic5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white; 
+}
+/* стили только для главной страницы — центральный блок */
+.body-home .hero {
+  height: 80vh; /* Занимает 80% высоты экрана */
+  display: flex;
+  flex-direction: column; /*  дочерние элементы располагаются вертикально */
+  justify-content: center; /* выравнивает всё по вертикали по центру */
+  align-items: center; /* выравнивает всё по горизонтали по центру */
+  text-align: center; /* центрирует текст */
+  padding: 0; /* убирает внутренние отступы */
+}
+
+.body-home h1 {
+  font-size: 100px;
+  margin: 0; /* Уменьшаем отступ от заголовка */
+  padding: 0;
+  color: white;
+}
+
+/* текст под заголовком — ближе к нему */
+.body-home .hero-text {
+  margin: 1px  0 50px; /* Маленький отступ сверху, побольше снизу */
+  max-width: 600px; /* текст не будет растягиваться на весь экран */
+}
+
+.body-home .hero-text p {
+  font-size: 19.2px;
+  color: white;
+  line-height: 1.5;
+}
+
+.body-home .button-group {
+  display: flex; /*  располагает в строку */
+  gap: 16px; /* Расстояние между кнопками */
+  justify-content: center; /* Горизонтальное центрирование */
+  flex-wrap: wrap; /* если места мало (на мобильных), кнопки переносятся на новую строку */
+}
+
+.body-home .btn {
+  display: inline-block; /* ведет себя как строка (не занимает всю ширину) */
+  background: transparent; /* Прозрачный фон */
+  color: white; /* Белый текст */
+  border: 2px solid white; /* Белая рамка толщиной 2px */
+  padding: 12.8px 32px; /* внутренние отступы */
+  text-decoration: none; /* убирает подчеркивание */
+  border-radius: 10px;
+  font-weight: bold; /* делает текст жирным */
+  font-size: 16px; /* размер шрифта */
+}
+
+.body-home .btn:hover {
+  background: rgba(255, 255, 255, 0.15); /* Полупрозрачный белый фон */
+  color: white;
+}
+
+.hero2{
+  height: 80vh; /* Занимает 80% высоты экрана */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+.hero2 p {
+  max-width: 800px; /* Максимальная ширина текста */
+  margin: 16px auto; /* Центрирует блок по горизонтали */
+  text-align: center; /* Центрирует строки внутри блока */
+  font-size: 17.6px;
+  line-height: 1.6;
+}
+
+h1 {
+  margin: 16px;
+  color: white;
+}
+
+.home-grid {
+  display: grid; /* включаем сетку */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  /* repeat() повторяет шаблон колонок заданное количество раз
+auto-fit автоматически подстраивает количество колонок под ширину контейнера
+minmax(260px, 1fr) — задаёт минимальную и максимальную ширину каждой колонки */
+  gap: 32px; /* расстояние между колонками и строками */
+  width: 100%; /* займёт всю доступную ширину */
+  max-width: 1200px; /* ограничивает максимальную ширину сетки */
+}
+
+/* каждый элемент сетки (карточка) */
+.hero2 .home-grid > div {
+  text-align: center;
+  background: white;
+  padding: 22.4px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* изображение в карточке */
+.hero2 .home-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* заголовок карточки */
+.hero2 .home-grid h3 {
+  font-size: 20.8px;
+  margin: 8px;
+  color: #4e342e;
+}
+
+/* описание */
+.hero2 .home-grid p {
+  color: #666;
+  font-size: 16px;
+}
+
+.pic {
+  width: 450px; /* ширина изображения*/
+  height: auto; /* сохраняет пропорции */
+  border-radius: 8px;
+  object-fit: cover; /* обрезает изображение, чтобы оно заполнило заданные размеры */
+}
