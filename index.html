@@ -8,7 +8,10 @@
   <title>Лесная Гавань - уютные и комфортные дома для отдыха на природе</title>
   <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="style.css"></noscript>
-  <link rel="stylesheet" href="data:text/css,/*{%20repeat%20this%2050000%20times%20*/%20body%20{color:%20black;}%20/*%20end%20*/">
+  <style>
+    /* Имитация тяжелого CSS */
+    .hero { background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxmaWx0ZXIgaWQ9ImJsdXIiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZGlhbnQpIiBmaWx0ZXI9InVybCgjbHVtYmVyKSIvPjwvZGVmcz48Z3JhZGllbnQgaWQ9ImdyYWRpZW50IiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuNSIgeDI9IjAuNSIgeDI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMCIvPjwvZ3JhZGllbnQ+PGZpbHRlciBpZD0ibHVtYmVyIj48ZmVHRU9SRiBmbmlsZT0idXJsKCNmdW5jdGlvbikifDwvZmVHRU9SRj48L2ZpbHRlcj48L3N2Zz4=') repeat; }
+  </style>
 </head>
 <body class="body-home">
   <div class="hero">
@@ -24,12 +27,24 @@
   </div>
   <script src="https://sdaria111.github.io/gavan2/js/main.js" defer></script>
   <script>
-    // Искусственная задержка
-    for (let i = 0; i < 10000000; i++) {}
+    // Искусственная задержка — 3 секунды
+    const start = performance.now();
+    while (performance.now() - start < 3000) {
+      // Пустой цикл — имитация тяжёлого кода
+    }
+  </script>
+
+  <!-- 4. Добавим пустой, но тяжелый JS -->
+  <script>
+    // Мусорный код — увеличивает вес и время выполнения
+    for (let i = 0; i < 10000; i++) {
+      console.log("Мусорный вывод " + i);
+    }
   </script>
 </body>
 
 </html>
+
 
 
 
