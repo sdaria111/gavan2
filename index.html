@@ -8,9 +8,16 @@
   <title>Лесная Гавань - уютные и комфортные дома для отдыха на природе</title>
   <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="style.css"></noscript>
+  <title></title>
+  <meta name="description" content="" />
+
+  <!-- Огромный, блокирующий, дублирующийся CSS -->
   <style>
-    /* Имитация тяжелого CSS */
-    .hero { background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxmaWx0ZXIgaWQ9ImJsdXIiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZGlhbnQpIiBmaWx0ZXI9InVybCgjbHVtYmVyKSIvPjwvZGVmcz48Z3JhZGllbnQgaWQ9ImdyYWRpZW50IiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuNSIgeDI9IjAuNSIgeDI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMCIvPjwvZ3JhZGllbnQ+PGZpbHRlciBpZD0ibHVtYmVyIj48ZmVHRU9SRiBmbmlsZT0idXJsKCNmdW5jdGlvbikifDwvZmVHRU9SRj48L2ZpbHRlcj48L3N2Zz4=') repeat; }
+    body { margin: 0; padding: 0; font-family: Arial; background: #fff; color: #777; } /* низкий контраст */
+    .hero { padding: 100vh 0; text-align: center; }
+    h1 { font-size: 2.5rem; }
+    /* Повторим это 500 раз, чтобы имитировать "тяжелый" CSS */
+    /* ... (представьте 500 дублирующих правил) ... */
   </style>
 </head>
 <body class="body-home">
@@ -27,23 +34,23 @@
   </div>
   <script src="https://sdaria111.github.io/gavan2/js/main.js" defer></script>
   <script>
-    // Искусственная задержка — 3 секунды
-    const start = performance.now();
-    while (performance.now() - start < 3000) {
-      // Пустой цикл — имитация тяжёлого кода
-    }
-  </script>
-
-  <!-- 4. Добавим пустой, но тяжелый JS -->
-  <script>
-    // Мусорный код — увеличивает вес и время выполнения
-    for (let i = 0; i < 10000; i++) {
-      console.log("Мусорный вывод " + i);
-    }
+    // Тяжелая синхронная работа
+    while (performance.now() < 5000) {}
+    
+    // Много мусорных ошибок
+    someUndefinedFunction(); // ReferenceError
+    
+    // Динамическое внедрение сдвигающего контента
+    setTimeout(() => {
+      const ad = document.createElement('div');
+      ad.style.cssText = 'height: 200px; background: red; position: absolute; top: 0; left: 0;';
+      document.body.appendChild(ad);
+    }, 1000);
   </script>
 </body>
 
 </html>
+
 
 
 
